@@ -1,0 +1,13 @@
+.btn{
+    width: 200px;
+    padding: 10px 0;
+    border: 2px solid #a67474;
+    background: none;
+    color: #ffffff;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 6px;
+    backdrop-filter: blur(8px);
+    text-transform: uppercase;
+    font-weight: 700;
+}
