@@ -1,0 +1,30 @@
+.input_card{
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card{
+    width: 550px;
+    margin: 0 auto;
+}
+
+.button_card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button_card p{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    margin: 0;
+    justify-content: center;
+}

@@ -1,0 +1,12 @@
+.btn{
+    width: 150px;
+    padding: 4px 0;
+    background: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:active{
+    background: black;
+    color: white;
+}
