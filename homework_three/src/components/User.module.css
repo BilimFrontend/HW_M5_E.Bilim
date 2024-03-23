@@ -1,0 +1,13 @@
+
+.user_card{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.user_info{
+    display: flex;
+    flex-direction: column;
+}
