@@ -23,6 +23,8 @@ const UserInfo = () => {
                 <p>Street: {user_info?.address?.street}</p>
                 <p>City: {user_info?.address?.city}</p>
                 <p>Suite: {user_info?.address?.suite}</p>
+                <p>Phone: {user_info?.phone}</p>
+                <p>Website: {user_info?.website}</p>
             </div>
             <Link to={'/'} className={classes.btn_back}>Назад</Link>
         </div>
