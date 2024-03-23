@@ -1,0 +1,16 @@
+.input{
+    border-radius: 6px;
+    padding: 10px 8px;
+    font-family: sans-serif;
+}
+
+.input:focus{
+    outline: none;
+}
+
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
