@@ -16,9 +16,10 @@ const UserInfo = () => {
 
     return (
         <div className={classes.user_info}>
-            <p>Name: {user_info?.name}</p>
-            <p>Email: {user_info?.email}</p>
-            <div className={classes.user_address}>
+            <img src="https://img.freepik.com/free-photo/portrait-man-laughing_23-2148859448.jpg" alt=""/>
+            <div className={classes.user_information}>
+                <p>Name: {user_info?.name}</p>
+                <p>Email: {user_info?.email}</p>
                 <p>Street: {user_info?.address?.street}</p>
                 <p>City: {user_info?.address?.city}</p>
                 <p>Suite: {user_info?.address?.suite}</p>
