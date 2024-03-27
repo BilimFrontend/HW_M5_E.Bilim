@@ -15,8 +15,6 @@ function preloaderOff() {
 export function addPokemonAction(pokemon) {
     return async function (dispatch) {
 
-        dispatch(preloaderOn())
-
         const options = {
             method: "POST",
             headers: {
@@ -25,10 +23,11 @@ export function addPokemonAction(pokemon) {
             body: JSON.stringify(pokemon)
         }
         const response = await fetch('https://pokeapi.co/api/v2/pokemon/ditto/', options)
-
         if (response.status >= 200 || response.status <= 204) {
             dispatch(preloaderOff())
             alert("Покемон успешно создан")
+        }else{
+            dispatch(preloaderOn())
         }
     }
 }

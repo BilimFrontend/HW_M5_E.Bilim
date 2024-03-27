@@ -18,16 +18,12 @@ const CreatPokemonPage = () => {
     })
 
     const formValue = (event) => {
-        setPokemon({
-            ...pokemon,
-            [event.target.name]: event.target.value
-        })
+        setPokemon({...pokemon, [event.target.name]: event.target.value})
     }
 
     const addPokemon= (event) => {
         event.preventDefault()
         dispatch(addPokemonAction(pokemon))
-
         if (pokemon.name === '' || pokemon.ability === '' || pokemon.rarity === '') {
             alert('Заполните поля')
         }
@@ -45,16 +41,16 @@ const CreatPokemonPage = () => {
                             <Form.Label>Pokemon Name</Form.Label>
                             <Form.Control type="text" placeholder="Pokemon name" name={'name'} onChange={formValue}/>
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Group className="mb-3" controlId="ability">
                             <Form.Label>Pokemon Ability</Form.Label>
                             <Form.Control type="text" placeholder="ability" name={'ability'} onChange={formValue}/>
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                        <Form.Group className="mb-3" controlId="rarity">
                             <Form.Label>Rarity Pokemon</Form.Label>
                             <Form.Control type="number" placeholder="pokemon rarity" name={'rarity'} onChange={formValue}/>
                         </Form.Group>
                         <Button variant="primary" type="submit"  className='btn btn-dark'>
-                            Submit
+                            Create Pokemon
                         </Button>
                     </Form>
                 }
