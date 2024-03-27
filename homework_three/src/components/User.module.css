@@ -1,0 +1,35 @@
+.user_item{
+    display: flex;
+    width: 250px;
+    padding-top: 30px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.user_item:hover{
+    background: #3c7c7e;
+    color: white;
+}
+
+.user_info img{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+.user_info{
+    width: 300px;
+    padding: 10px;
+}
+
+.user_information{
+    margin: 30px auto 0;
+    width: 200px;
+    text-align: left;
+}
